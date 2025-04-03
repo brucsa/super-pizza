@@ -1,0 +1,187 @@
+/* reset margem padrão*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* plano de fundo */
+body {
+    background-image: url("../imagens/bg_site.jpg");
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#container {
+    background-color: #fffed6e4;
+    width: 1190px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* menu superior */
+header img {
+    width: 250px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
+    list-style-type: none;
+    /* list - tirar bolinha do menu */
+    display: flex;
+}
+
+nav a {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0 20px;
+}
+
+nav a:link {
+    color: #b83229;
+}
+
+nav a:visited {
+    color: #b83229;
+}
+
+nav a:hover {
+    color: #00774a;
+}
+
+nav a:active {
+    color: #b83229;
+}
+
+/* classe titulo principal */
+.titulo-1,
+h2 {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #b83229;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* classe paragrafo 1 */
+.paragrafo-1,
+.cards>article>p,
+footer,
+.bt-saiba-mais,
+label,
+input, option, select {
+    /* agrupado e encadeado */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    color: #00774a;
+    margin-bottom: 40px;
+}
+
+/* classe cards */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+h2 {
+    /* estilo na classe .titulo-1 com alteração de tamanho */
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.cards>article {
+    width: 565px;
+}
+
+.cards>article>img {
+    border-radius: 10px;
+}
+
+.bt-saiba-mais {
+    background-color: #b83229;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 30px;
+}
+
+.bt-saiba-mais:hover {
+    /* pseudo classe */
+    background-color: #00774a;
+}
+
+footer>section {
+    background-color: #b83329;
+    height: 120px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer>section>article {
+    display: flex;
+    align-items: center;
+}
+
+footer>section>article>img {
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
+}
+
+footer>section>article>a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 10px
+}
+
+footer>section>article>a:hover {
+    /* pseudo classe */
+    text-decoration: underline;
+}
+
+.assinatura {
+    color: #b83329;
+    font-size: 0.8rem;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.espaçamento-top {
+    padding-top: 40px;
+}
+
+.espaçamento-bottom {
+    padding-bottom: 40px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+input, select, textarea {
+border: #00774a solid 1px;
+border-radius: 10px;
+padding: 2px;
+width: 400px;
+}
+
+.texto-esquerda {
+    text-align: left;
+}
