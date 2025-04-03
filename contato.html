@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- link CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-png">
+
+    <title>Pizzaria Super Pizza - A melhor pizzaria de Barueri</title>
+</head>
+
+<body>
+    <div id="container">
+        <!-- menu superior -->
+        <header>
+            <img src="imagens/logo.png" alt="Logotipo - Pizzaria Super Pizza">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="venha-visitar.html">Venha nos Visitar</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- corpo do site -->
+        <main>
+
+            <h1 class="titulo-1">Entre em contato</h1>
+            <section class="cards">
+                <!-- cardápio -->
+                <article>
+                    <form action="processador.php" method="post">
+                        <label for="nome">Nome</label><br>
+                        <input type="text" name="nome" id="nome" required><br>
+
+                        <label for="email">E-mail</label><br>
+                        <input type="email" name="email" id="email"><br>
+
+                        <label for="telefone">Telefone</label><br>
+                        <input type="tel" name="telefone" id="telefone" required><br>
+
+                        <label for="encontrou">Onde você nos encontrou?</label><br>
+                        <select name="encontrou" id="encontrou">
+                            <option value="encontrou">Google</option>
+                            <option value="encontrou">Facebook</option>
+                            <option value="encontrou">Instagram</option>
+                            <option value="encontrou">Indicação</option>
+                        </select><br>
+
+                        <label for="mensagem">Deixe uma mensagem</label><br>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" maxlength="100"
+                            style="resize: none"></textarea><br><br>
+
+                        <input type="submit" value="Enviar" class="bt-saiba-mais">
+                    </form>
+                </article>
+                <!-- venha nos visitar -->
+                <article>
+                    <img src="imagens/google maps.webp" alt="Localização da Pizzaria" width="565px">
+
+                    <h2>Endereços</h2>
+
+                    <p><strong>Matriz:</strong> Avenida Galáctica, 123 - Setor Espacial</p>
+
+                    <p><strong>Filial 1:</strong> Rua dos Asteroides, 456 - Bairro Cósmico</p>
+
+                    <p><strong>Filial 2:</strong> Praça da Nebulosa, 789 - Centro Estelar</p>
+
+                    <p><strong>Filial 3:</strong> Via Láctea, 1011 - Planeta Pizza</p>
+                </article>
+                </article>
+            </section>
+        </main>
+        <!-- rodapé -->
+        <footer>
+            <!-- redes sociais -->
+            <section>
+                <article>
+                    <img src="imagens/logo_insta.png" alt="Logo Instagram">
+                    <a href="#">Visite nosso Instagram</a>
+                </article>
+                <article>
+                    <img src="imagens/logo_whatsapp.png" alt="Logo Instagram">
+                    <a href="#">Fale conosco pelo WhatsApp</a>
+                </article>
+            </section>
+            <p class="assinatura">Desenvolvido por Bruna Almeida</p>
+        </footer>
+    </div>
+</body>
+
+</html>
